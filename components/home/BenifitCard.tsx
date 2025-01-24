@@ -6,10 +6,10 @@ import P from '../ui/customized/P';
 const BenifitCard = ({data}:{data:Benefit}) => {
     const {icon,title,description}=data
     return (
-        <div className='flex gap-2'>
+        <div className='flex gap-[20px] items-start'>
             <div>{icon}</div>
             <div>
-                <P>{title}</P>
+                <P className='mb-2'>{title}</P>
                 <Description color="#CCCCCC">{description}</Description>
             </div>
             

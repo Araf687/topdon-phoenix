@@ -9,6 +9,8 @@ import { Headset, PoundSterling, Truck, Wrench } from "lucide-react";
 import Description from "@/components/ui/customized/Description";
 import { Benefit } from "@/types/data";
 import BenifitCard from "@/components/home/BenifitCard";
+import FeatureProductsSection from "@/components/home/FeatureProductsSection";
+
 
 export default function Home() {
   const benifits = [
@@ -31,6 +33,9 @@ export default function Home() {
         "We know when you order a scanner for your car, you may need it fast! All of our scanners are dispatched via Royal Mail first class the next working day, providing you order before our cut off time of 12pm.",
     },
   ];
+
+
+  
   return (
     <div className="bg-[#1A1F28]">
       <div
@@ -87,14 +92,19 @@ export default function Home() {
           </div>
 
           {/* benifits section or why choose us? */}
-          <div className="py-20 mt-20 border-t">
+          <div className="space-y-10 py-10 lg:py-20 my-10 border-t border-b">
             <H className="font-bold italic">Why Choose Us?</H>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-[40px] md:grid-cols-3">
               {benifits.map((item: Benefit, index: number) => (
                 <BenifitCard key={index} data={item} />
               ))}
             </div>
           </div>
+
+           {/* Featured product section  */}
+           <div>
+            <FeatureProductsSection/>
+           </div>
         </div>
       </div>
     </div>
