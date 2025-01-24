@@ -14,11 +14,11 @@ const OfferSection = () => {
     { icon: null, offerTitle: "iCarsoft UK Authorised Dealer" },
     { icon: <Image src={reviewStar} alt="review-star" />, offerTitle: "Rated Excellent" }, // Wrap reviewStar in <img />
     { icon: <ClockAlert />, offerTitle: "On-Time Delivery" },
-    { icon: <CircleCheck />, offerTitle: "Quality Assurance" },
+    { icon: <CircleCheck color="#00809d"/>, offerTitle: "Quality Assurance" },
   ];
 
   return (
-    <div className="flex justify-center items-center gap-10">
+    <div className="lg:flex hidden justify-center items-center gap-20 py-[7px] text-[#FFFFFF]">
       {offerSection.map((item, index) => (
         <div key={index} className="flex items-center space-x-2">
           {item.icon && <span>{item.icon}</span>}
