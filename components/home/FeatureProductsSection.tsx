@@ -50,7 +50,7 @@ const FeatureProductsSection = () => {
   ];
   return (
     <div>
-        <H className="itelic font-bold">Featured Products</H>
+        <H className="italic font-bold">Featured Products</H>
       <Carousel
         opts={{
           align: "start",
