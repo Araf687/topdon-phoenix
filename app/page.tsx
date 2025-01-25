@@ -71,8 +71,8 @@ export default function Home() {
       <div>
         <div className="px-[20px] lg:px-[120px] bg-[#1A1F28]">
           {/* toots & scanner view */}
-          <div className="grid grid-cols-1 pb-[40px] lg:pb-[80px] md:grid-cols-2 ">
-            <div className="col-span-1 py-[30px] lg:py-[50px] md:col-span-2">
+          <div className="grid grid-cols-1 py-[40px] space-y-[30px] lg:space-y-[50px] lg:py-[80px] md:grid-cols-2 ">
+            <div className="col-span-1 md:col-span-2">
               <p className="text-[#CCCCCC] font-sans text-[14px] lg:text-[24px] font-thin text-center">
                 Car Diagnostic
               </p>

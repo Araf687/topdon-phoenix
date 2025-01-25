@@ -41,7 +41,7 @@ const CustomerReviewSection = () => {
     },
   ];
   return (
-    <div className="bg-[#1D232D] lg:px-[120px] pt-[40px]  px-[26px] lg:pt-[80px] space-y-[50px] borde-3 border-gray-900 border-b">
+    <div className="bg-[#1D232D] lg:px-[120px] pt-[40px] px-[26px] lg:pt-[80px] space-y-[50px] borde-3 border-gray-900 border-b">
       <div className="flex justify-between items-center">
         <div>
           <H className="italic uppercase font-bold">the love from our</H>
@@ -87,7 +87,7 @@ const CustomerReviewSection = () => {
         </p>
       </div>
       {/* our customer */}
-      <div className="flex justify-between items-center w-full pb-[20px] lg:pb-[90px] overflow-x-auto space-x-4">
+      <div className="flex justify-between items-center w-full pb-[40px] lg:pb-[90px] overflow-x-auto space-x-4">
         {authors.map((item: Author, index: number) => (
           <div
             key={index}
