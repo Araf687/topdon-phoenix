@@ -45,7 +45,6 @@ To run this project locally:
    
  ## 📸 Screenshots
 ![Screenshot (76)](https://github.com/user-attachments/assets/8e839e11-9eb3-42dc-a2e5-40ed8e12100d)
-![Screenshot (72)](https://github.com/user-attachments/assets/a2d9b233-cc13-40f4-a4fa-164690e70396)![Uploading Screenshot (74).png…]()
 ![Screenshot (73)](https://github.com/user-attachments/assets/b592ff45-74df-44d5-a376-ca1c49b22492)
 ![Screenshot (68)](https://github.com/user-attachments/assets/490879cc-87d6-42db-8341-c03fbad12f5e)
 ![Screenshot (71)](https://github.com/user-attachments/assets/f8546f84-df8b-402c-a8bd-c9436959c1e2)
