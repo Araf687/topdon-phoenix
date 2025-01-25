@@ -47,7 +47,7 @@ const Nav = () => {
   
   return (
     <div className="hidden lg:flex gap-[40px] justify-center py-[12px] bg-[#1F242D] text-[#CCCCCC]">
-      <NavigationMenu>
+      <NavigationMenu className="bg-[#1F242D]">
         <NavigationMenuList>
           <NavigationMenuItem className="mr-5">
             <Link href="#" legacyBehavior passHref>
@@ -97,7 +97,7 @@ const Nav = () => {
               Service Reset Tools
             </NavigationMenuTrigger>
             <NavigationMenuContent className={`bg-[#1F2632] text-[#CCCCCC] border border-[#CCCCCC] `}>
-              <ul className="grid w-[400px] gap-3 p-5  md:grid-cols-3 w-[1200px] ">
+              <ul className="grid gap-3 p-5  md:grid-cols-3 w-[1200px] ">
                 {diagnosticTools.map((component:LinkProps) => (
                   <ListItem
                     key={component.title}
