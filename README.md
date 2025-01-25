@@ -1,4 +1,4 @@
-# E-commerce Landing Page 🚀
+# Topdon Phoenix E-commerce Landing Page 🚀
 
 An elegant and responsive e-commerce landing page built using **Next.js**, **Tailwind CSS**, **ShadCN UI**, and **TypeScript**.
 
@@ -29,6 +29,16 @@ To run this project locally:
    ```bash
    git clone https://github.com/yourusername/ecommerce-landing-page.git
 
-2. Install packages:
+2. Navigate to repository:
+   ```bash
+   cd topdon-phoenix
+
+3. Install packages:
    ```bash
    npm install
+2. Start the development server::
+   ```bash
+   npm run dev
+2. Open in your browser:
+   ```bash
+   http://localhost:3000
