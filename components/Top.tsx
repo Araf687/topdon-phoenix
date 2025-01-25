@@ -1,13 +1,17 @@
+"use client";
 import { topNavLinks } from "@/lib/constants";
 import { NavLinkProps } from "@/types/data";
 import React from "react";
 import { Separator } from "./ui/separator";
 import { Facebook, Instagram, MailOpen, Youtube } from "lucide-react";
 import Link from "next/link";
-import tweetdeck from "@/assets/image/icon/xcore.svg"
+import tweetdeck from "@/assets/image/icon/xcore.svg";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Top = () => {
+  const pathname = usePathname();
+
   const NavLink = ({
     data,
     showSeparator,
@@ -15,15 +19,21 @@ const Top = () => {
     data: NavLinkProps;
     showSeparator: boolean;
   }) => {
+    const isActive = pathname === data.link; // Check if the link matches the current route
+
     return (
-      <Link href={data.link} className="text-white flex items-center">
-        <span className="tracking-wide text-[#CCCCCC] text-[14px]">
+      <Link href={data.link} className="flex items-center">
+        <span
+          className={`tracking-wide text-[14px] ${
+            isActive ? "text-[#EA4C49]" : "text-[#CCCCCC]"
+          }`}
+        >
           {data.name}
         </span>
         {showSeparator && (
           <Separator
             orientation="vertical"
-            className="h-[10px] mx-[10px] text-[#737F96]"
+            className="h-[10px] mx-[11px] text-[#737F96]"
           />
         )}
       </Link>
@@ -62,8 +72,13 @@ const Top = () => {
             <Link href="#">
               <Facebook size={17} className="hover:text-[#EA4C49]" />
             </Link>
-            <Link href="#"><Image  src={tweetdeck} alt={"social-icon"} className="size-[14px] "/></Link>
-         
+            <Link href="#">
+              <Image
+                src={tweetdeck}
+                alt={"social-icon"}
+                className="size-[14px]"
+              />
+            </Link>
             <Link href="#">
               <Instagram size={17} className="hover:text-[#EA4C49]" />
             </Link>

@@ -42,3 +42,11 @@ To run this project locally:
 2. Open in your browser:
    ```bash
    http://localhost:3000
+
+   
+## 📄 Learnings and Highlights
+
+- **Reusable Design Patterns**: Ensured all components are reusable and modular, adhering to best practices for scalability.
+- **TypeScript Integration**: Leveraged TypeScript to improve productivity, enhance code maintainability, and reduce potential bugs.
+- **CSS Optimization**: Utilized Tailwind CSS with responsive utilities for efficient and consistent styling across the application.
+- **SEO Best Practices**: Structured content to enhance visibility and ranking on search engines, improving discoverability.
