@@ -4,6 +4,8 @@ import React from "react";
 import { Separator } from "./ui/separator";
 import { Facebook, Instagram, MailOpen, Youtube } from "lucide-react";
 import Link from "next/link";
+import tweetdeck from "@/assets/image/icon/xcore.svg"
+import Image from "next/image";
 
 const Top = () => {
   const NavLink = ({
@@ -56,16 +58,17 @@ const Top = () => {
             className="h-[10px] mx-[10px] text-[#737F96] hidden lg:block"
           />
 
-          {/* Social Media Icons */}
           <div className="flex justify-between items-center gap-[15px] lg:gap-[17px] lg:w-[125px] lg:w-auto">
             <Link href="#">
-              <Facebook size={17} />
+              <Facebook size={17} className="hover:text-[#EA4C49]" />
+            </Link>
+            <Link href="#"><Image  src={tweetdeck} alt={"social-icon"} className="size-[14px] "/></Link>
+         
+            <Link href="#">
+              <Instagram size={17} className="hover:text-[#EA4C49]" />
             </Link>
             <Link href="#">
-              <Instagram size={17} />
-            </Link>
-            <Link href="#">
-              <Youtube size={20} />
+              <Youtube size={20} className="hover:text-[#EA4C49]" />
             </Link>
           </div>
         </div>

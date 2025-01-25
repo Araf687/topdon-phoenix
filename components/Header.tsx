@@ -5,6 +5,7 @@ import Image from "next/image";
 import brandlogo from "@/assets/image/albionshire.svg";
 import { Heart, LogIn, Search, ShoppingCart, Smartphone } from "lucide-react";
 import Nav from "./Nav";
+import NavMenu from "./NavMenu";
 
 const Header = () => {
   return (
@@ -12,11 +13,17 @@ const Header = () => {
       <Top />
       <div className="px-[10px] lg:px-[120px] flex flex-wrap justify-between items-center bg-[#1A1F28] py-[20px]">
         <div className="flex items-center gap-[50px]">
-          <Image
-            src={brandlogo}
-            alt="brand-logo"
-            className="h-[30px] w-auto lg:h-[39px]" // Adjust height for mobile and desktop
-          />
+          <div className="flex items-center lg:gap-0 gap-2">
+            <div className="lg:invisible sm:visible">
+              <NavMenu />
+            </div>
+
+            <Image
+              src={brandlogo}
+              alt="brand-logo"
+              className="h-[30px] w-auto lg:h-[49px]" // Adjust height for mobile and desktop
+            />
+          </div>
 
           {/* search section  */}
           <div className="hidden lg:flex w-[430px] border border-[#253146] items-center rounded-lg">

@@ -22,7 +22,7 @@ export function Slider() {
             <CarouselItem key={index}>
               <div className="flex h-full items-center justify-center lg:p-10">
                 {/* Left section (Text content) */}
-                <div className="w-1/2 p-10">
+                <div className="w-1/2 py-10 px-5 lg:p-10">
                   <p className="lg:text-3xl text-white">TOPDON Phoenix Elite</p>
                   <p className="mt-4 text-white lg:block hidden">
                     TOPDON Phoenix Elite, dealer-level diagnostics at a fraction
@@ -52,8 +52,8 @@ export function Slider() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2" />
-        <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2" />
+        <CarouselPrevious className="invisible lg:visible absolute left-0 top-1/2 transform -translate-y-1/2" />
+        <CarouselNext className="invisible lg:visible absolute right-0 top-1/2 transform -translate-y-1/2" />
       </Carousel>
     </div>
   );

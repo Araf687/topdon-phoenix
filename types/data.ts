@@ -9,6 +9,7 @@ export interface Benefit {
   icon: ReactNode; // To allow JSX components like <Truck />
   title: string;
   description: string;
+  numberIcon:ReactNode;
 }
 
 export interface FeaturedProduct {
@@ -17,5 +18,5 @@ export interface FeaturedProduct {
   rating: number;
   price_was: string;
   price_now: string;
-  status: string; // Customize this based on the possible statuses you need
+  status: StaticImageData | ""; // Customize this based on the possible statuses you need
 }

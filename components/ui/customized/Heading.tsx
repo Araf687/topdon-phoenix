@@ -7,7 +7,7 @@ type HProps = {
 
 const H: React.FC<HProps> = ({ children, className = "" }) => {
   return (
-    <h1 className={`text-[34px] text-white ${className}`}>
+    <h1 className={`text-[23px] lg:text-[34px] text-white ${className}`}>
       {children}
     </h1>
   );

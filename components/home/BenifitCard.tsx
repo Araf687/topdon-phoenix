@@ -1,16 +1,15 @@
 import { Benefit } from '@/types/data';
 import React from 'react';
-import Description from '../ui/customized/Description';
 import P from '../ui/customized/P';
 
 const BenifitCard = ({data}:{data:Benefit}) => {
-    const {icon,title,description}=data
+    const {icon,title,description,numberIcon}=data
     return (
-        <div className='flex gap-[20px] items-start'>
-            <div>{icon}</div>
-            <div>
-                <P className='mb-2'>{title}</P>
-                <Description color="#CCCCCC">{description}</Description>
+        <div className='space-y-'>
+            <div className='flex items-center gap-[20px]'>{icon} <P className='mb-2'>{title}</P></div>
+            <div className='flex items-center gap-[35px]'>
+                {numberIcon}
+                <p className='text-[14px] text-[#CCCCCC] text-justify' >{description}</p>
             </div>
             
         </div>
